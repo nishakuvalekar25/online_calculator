@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Calculator</title>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+        <link rel="icon" href="calculator.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calculator">
-        <input type="text" 
-        id="inputbox"
-        placeholder="0">
+        <input type="text" id="inputbox" placeholder="0">
         <div>
-            <input id="ac" type="button" value="AC" onclick="clearScreen()">
             <input id="del" type="button" value="DEL" onclick="clearScreen()">
-            <input type="button" value="%" onclick="display('%')">
-            <input type="button" value="/" onclick="display('/')">
+            <input class="equal_" id="equal" type="button" value="=" onclick="calculate()">
         </div>
         <div>
             <input type="button" value="7" onclick="display('7')">
@@ -40,7 +39,7 @@
             <input type="button" value="00" onclick="display('00')">
             <input type="button" value="0" onclick="display('0')">
             <input type="button" value="." onclick="display('.')">
-            <input id="equal" type="button" value="=" onclick="calculate()">
+            <input type="button" value="/" onclick="display('/')">
         </div>
     </div>
     <script src="script.js"></script>
