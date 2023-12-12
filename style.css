@@ -10,8 +10,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background: linear-gradient(45deg, #250061, #560067);*/
-    background: #343434;
+    /* background: linear-gradient(45deg, #250061, #560067); */
+    background: #454545;
+    
 }
 .calculator {
     border: none;
@@ -19,10 +20,11 @@ body {
     border-radius: 20px;
     /* From https://css.glass */
     background: #291f3547;
-    border-radius: 16px;
+    border-radius: 35px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5.8px);
     -webkit-backdrop-filter: blur(5.8px);
+    /* background: #343434; */
 }
 
 .calculator #inputbox{
@@ -48,10 +50,18 @@ body {
 
 .calculator #inputbox::placeholder{
     color: #184315;
+    margin-right: 10px;
+
 }
 div{
     padding: 3px;
 }
+/* div .accc{
+    color: #198931;
+    width: 100px;
+} */
+
+
 
 div input{
     border: none;
@@ -71,24 +81,121 @@ div input:hover{
     background-color: #3b343d;
 }
 
-#ac{
-    background-color: #1573ff;
-}
-#ac:hover{
-    background-color: #194689;
-    color: #ffff;
-}
 
 #del{
-    background-color: #ff3d3d;
+    background-color: #b12e2e;
 }
 #del:hover{
     background-color: #9a2a2a;
-    color: #fff;
+    
 }
 #equal{
-    background-color: #1e7918;
+    background-color: #22871b;
+    /* height: 100px; */
+    width: 170px;
+    border-radius: 15px;
+}
+#del{
+    width: 170px;
+    border-radius: 15px;
 }
 #equal:hover{
     background-color: #175c13;
+}
+
+@media screen and (max-width:600px){
+    
+
+    .calculator {
+        width: 300px;
+        height: 520px;
+        border: none;
+        padding: 20px;
+        /* From https://css.glass */
+        background: #291f3547;
+        border-radius: 15px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(5.8px);
+        -webkit-backdrop-filter: blur(5.8px);
+        /* background: #343434; */
+    }
+
+    
+.calculator #inputbox{
+    width: 250px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    /* From https://css.glass */
+    /* background: rgba(105, 134, 102, 0.721); */
+    background: rgb(111, 131, 108);
+    border-radius: 16px;
+    /* box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5); */
+    box-shadow: inset 0px 0px 10px rgb(0, 0, 0,0.5);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    font-size: 50px;
+    text-align: right;
+    cursor: pointer;
+    color: #184315;
+    margin-bottom: 20px;
+    
+    
+}
+.calculator #inputbox::placeholder{
+    color: #184315;
+    margin-right: 10px;
+}
+
+div{
+    padding: 3px;
+}
+
+
+
+
+div input{
+    border: none;
+    margin: 2px;
+    width: 55px;
+    height: 8.5vh;
+    /* border-radius: 25%; */
+    background-color: #453e46;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.4s;
+    color: #fff;
+    text-align: center;
+}
+div input:hover{
+    color: #ababab;
+    background-color: #3b343d;
+}
+
+
+#del{
+    background-color: #b12e2e;
+}
+#del:hover{
+    background-color: #9a2a2a;
+    
+}
+#equal{
+    background-color: #22871b;
+    /* height: 100px; */
+    width: 116px;
+    height: 10vh;
+    border-radius: 15px;
+}
+#del{
+    width: 117px;
+    border-radius: 15px;
+    height: 10vh;
+}
+#equal:hover{
+    background-color: #175c13;
+}
+
 }
