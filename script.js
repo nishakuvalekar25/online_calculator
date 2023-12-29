@@ -12,5 +12,3 @@ function calculate(){
     var q = eval(p);
     document.getElementById('inputbox').value=q;
 }
-
-// https://www.makeuseof.com/build-a-simple-calculator-using-html-css-javascript/
